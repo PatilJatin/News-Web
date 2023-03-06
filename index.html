@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Gloock', serif;
+        }
+     </style>
+    <title>News App 💁 |  Jatin</title>
+  <link rel="stylesheet" href="./assets/index-e362eea7.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <section class="wrapper w-[100vw] min-h-[100vh] dark:bg-slate-900 overflow-x-hidden bg-slate-300">
+        <div class="container max-w-[1280px] mx-auto dark:text-white ">
+            <nav class=" my-5">
+                <header class=" text-center my-2 ">
+                    <h1 class="text-5xl font-bold leading-normal">NEWS</h1>
+                </header>
+                <div class="nav-container min-h-[60px] dark:bg-slate-800 bg-slate-400 p-2 flex justify-between rounded-lg drop-shadow-lg ">
+                    <form class="searchForm flex items-center relative gap-3 basis-[20%]">
+                        <img class="w-5 h-5" src="./assets/search-icon-4db13a46.svg" alt="">
+                        <input autocomplete="off" id="searchtab"
+                            class="dark:bg-slate-800 bg-slate-400 w-[80%] relative leading-normal  text-lg focus:outline-none  placeholder:text-white"
+                            type="input" placeholder="Search here...">
+                    </form>
+
+                    <ul class="flex justify-between gap-6 items-center ">
+                        <li id="general">
+                            <a href="#general" class="text-lg font-semibold  leading-normal ">General</a>
+                        </li>
+                        <li id="Sports">
+                            <a href="#Sports" class="text-lg font-semibold leading-normal ">Sports</a>
+                        </li>
+                        <li id="Technology">
+                            <a href="#Technology" class="text-lg font-semibold leading-normal ">Technology</a>
+                        </li>
+                        <li id="Entertainment">
+                            <a href="#Entertainment" class="text-lg font-semibold leading-normal">Entertainment</a>
+                        </li>
+                        <li id="Business">
+                            <a href="#Business" class="text-lg font-semibold leading-normal ">Business</a>
+                        </li>
+                    </ul>
+
+                    <div class="basis-[20%] flex justify-center">
+                        <button class="toggle-dark flex items-center justify-center gap-2  max-w-[120px] ">
+                            <p class="modeName text-lg font-semibold leading-normal">Light</p>
+                            <img src="./assets/sun-icon-d82cf772.svg" id="mode-icon" alt="">
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- main container -->
+            <section class="newsContainer bg-slate-400 dark:bg-slate-800 flex flex-wrap px-4 py-6 rounded- overflow-x-hidden justify-between rounded-lg drop-shadow-md hidden">
+                <!-- card1 -->
+                <div class="card dark:bg-[hsl(222,47%,11%)] bg-slate-300 basis-1/4 flex flex-col  gap-2 rounded-lg drop-shadow-md">
+                    <div class="h-[40%] object-cover w-full ">
+                        <img class=" w-[100%] h-[100%] rounded-t-lg" id="newsImg" src="./assets/dummy-410dbcfb.jpg" alt="">
+                    </div>
+                    <div class=" m-2 rounded-lg shadow-md">
+                        <h3 id="newsHeading" class="font-bold text-lg leading-normal px-2">How to Watch the Arrowverse Shows in Order
+                            on
+                            Netflix in 2023</h3>
+                        <p id="newsDate" class="px-2 dark:text-blue-500 text-blue-800 font-medium">11/11/2011</p>
+                        <p id="newsDetails" class="px-2">Here is your guide to watching the Arrowverse on Netflix in
+                            2023.
+                            lorem20</p>
+                    </div>
+                    <a target="_blank"
+                        class=" text-center text-xl leading-normal font-medium mx-2 px-4  py-2 rounded-lg bg-blue-600 hover:bg-blue-400">Read more...</a>
+                </div>
+            </section>
+            <section id="errorpage" class="hidden errorSec">
+                <img src="./assets/404-error-not-found.png" width="100%" alt="">
+            </section>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>
